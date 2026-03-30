@@ -179,6 +179,7 @@ return [
         Cp\Product\ProductServiceProvider::class,
         Cp\Media\MediaServiceProvider::class,
         Cp\Slider\SliderServiceProvider::class,
+        Cp\Gallery\GalleryServiceProvider::class,
         Cp\WebsiteSetting\WebsiteSettingServiceProvider::class,
         Cp\BlogPost\BlogPostServiceProvider::class,
         Cp\QuestionAnswer\QuestionAnswerServiceProvider::class,

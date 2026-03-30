@@ -99,4 +99,10 @@ Route::group(['middleware' => ['web']], function () {
         'uses' => 'Cp\Frontend\Controllers\FrontendController@tourGuideDetails',
         'as' => 'tourGuideDetails'
     ]);
+
+    // Gallery (Most Popular Destinations -> Gallery)
+    Route::get('/gallery', [
+        'uses' => 'Cp\Frontend\Controllers\FrontendController@gallery',
+        'as' => 'gallery',
+    ]);
 });

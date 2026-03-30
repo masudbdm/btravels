@@ -62,6 +62,7 @@
           @includeIf('product::admin.layouts.adminProductLeftSidebar')
           @includeIf('media::admin.layouts.adminMediaLeftSidebar')
           @includeIf('slider::admin.layouts.adminSliderLeftSidebar')
+          @includeIf('gallery::admin.layouts.adminGalleryLeftSidebar')
           @includeIf('blogpost::admin.layouts.adminBlogPostLeftSidebar')
           @includeIf('questionanswer::admin.layouts.adminQuestionAnswerLeftSidebar')
           @includeIf('frontend::admin.layouts.adminContactLeftSidebar')

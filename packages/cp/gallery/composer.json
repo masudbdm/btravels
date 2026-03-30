@@ -1,0 +1,33 @@
+// {
+//   "name": "cp/gallery",
+//   "description": "Gallery module",
+//   "type": "library",
+//   "license": "MIT",
+//   "autoload": {
+//     "psr-4": {
+//       "Cp\\Gallery\\": "src/"
+//     }
+//   },
+//   "extra": {
+//     "laravel": {
+//       "providers": [
+//         "Cp\\Gallery\\GalleryServiceProvider"
+//       ]
+//     }
+//   }
+// }
+
+{
+  "name": "cp/gallery",
+  "description": "gallery system for laravel cms",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "M K Masud Hasan",
+          "email": "masudbdm@gmail.com"
+      }
+  ],
+  "minimum-stability": "stable",
+  "require": {}
+}
+

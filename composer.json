@@ -39,6 +39,7 @@
             "Cp\\QuestionAnswer\\": "packages/cp/questionanswer/src",
             "Cp\\Media\\": "packages/cp/media/src",
             "Cp\\Slider\\": "packages/cp/slider/src",
+            "Cp\\Gallery\\": "packages/cp/gallery/src",
             "Cp\\WebsiteSetting\\": "packages/cp/websitesetting/src",
             "Cp\\TourPackage\\": "packages/cp/tourpackage/src",
             "Cp\\Frontend\\": "packages/cp/frontend/src",

@@ -276,4 +276,14 @@ class FrontendController extends Controller
         $data['tour'] = Tour::where('id', $id)->whereActive(true)->first();
         return view('frontend::welcome.tourGuideDetails', $data);
     }
+
+    public function gallery()
+    {
+        $data['features'] = \Cp\Gallery\Models\Gallery::whereActive(true)
+            ->with('items')
+            ->latest()
+            ->get();
+
+        return view('frontend::gallery.gallery', $data);
+    }
 }
