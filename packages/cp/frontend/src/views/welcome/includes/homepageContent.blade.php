@@ -32,7 +32,7 @@
                     @if ($visa_page)
                         <span class="h4">
                             <a
-                                href="https://bayyinahhajjnumrah.com/page/{{ $visa_page->id }}/{{ $visa_page->page_type }}">Visa</a>
+                                href="{{ route('page', ['id' => $visa_page->id, 'slug' => page_slug($visa_page->name)])}}">Visa</a>
                         </span>
                     @else
                         <span class="h4">Visa</span>
@@ -47,7 +47,7 @@
                     @if ($ticket_page)
                         <span class="h4">
                             <a
-                                href="https://bayyinahhajjnumrah.com/page/{{ $ticket_page->id }}/{{ $ticket_page->page_type }}">Ticket</a>
+                                href="{{ route('page', ['id' => $ticket_page->id, 'slug' => page_slug($ticket_page->name)])}}">Ticket</a>
                         </span>
                     @else
                         <span class="h4">Ticket</span>
@@ -61,9 +61,9 @@
                     </div>
                     @if ($umrah_page)
                         <span class="h4">
-                            {{-- <a href="https://bayyinahhajjnumrah.com/page/29/umrah-page">Umrah</a> --}}
+                            
                             <a
-                                href="https://bayyinahhajjnumrah.com/page/{{ $umrah_page->id }}/{{ $umrah_page->page_type }}">Umrah</a>
+                                href="{{ route('page', ['id' => $visa_page->id, 'slug' => page_slug($umrah_page->name)])}}">Umrah</a>
 
                         </span>
                     @else
@@ -80,8 +80,8 @@
                     @if ($hajj_page)
                         <span class="h4">
                             <a
-                                href="https://bayyinahhajjnumrah.com/page/{{ $hajj_page->id }}/{{ $hajj_page->page_type }}">Hajj</a>
-                            {{-- <a href="https://bayyinahhajjnumrah.com/page/28/hajj-package">Hajj</a> --}}
+                                href="{{ route('page', ['id' => $hajj_page->id, 'slug' => page_slug($hajj_page->name)])}}">Hajj</a>
+                            
                         </span>
                     @else
                         <span class="h4">Hajj</span>
