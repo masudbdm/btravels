@@ -1,41 +1,12 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-.env*
-.env.backup
-.env.production
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
-/.fleet
-/.idea
-/.vscode
-# Laravel default
 /vendor
 /node_modules
-/public/hot
+/.env*
 /public/storage
 /storage/*.key
-.env*
-.env.backup
-.phpunit.result.cache
-
-# Logs & errors
-npm-debug.log
-yarn-error.log
-*.log
-
-# IDE / Editor
-/.idea
-/.vscode
-
-# OS / Temp
 *.zip
+*.sql
+*.log
 .DS_Store
+/.idea
+/.vscode
+
