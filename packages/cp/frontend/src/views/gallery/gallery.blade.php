@@ -29,6 +29,30 @@
             cursor: pointer;
         }
 
+        .gallery-feature-toggle {
+            text-decoration: none !important;
+        }
+
+        .gallery-feature-toggle * {
+            text-decoration: none !important;
+        }
+
+        .gallery-feature-meta {
+            padding-left: 8px;
+        }
+
+        .gallery-feature-title {
+            display: block;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .gallery-feature-desc {
+            font-size: 13px;
+            line-height: 1.35;
+            margin-top: 0;
+        }
+
         .gallery-preview-thumb {
             width: 64px;
             height: 48px;
@@ -95,10 +119,10 @@
                                     class="gallery-feature-thumb mr-3"
                                     alt="{{ $feature->title ?? 'Feature' }}"
                                 >
-                                <div class="text-left">
-                                    <span class="h4 mb-0">{{ $feature->title ?? '' }}</span>
+                                <div class="text-left gallery-feature-meta">
+                                    <span class="h4 mb-0 gallery-feature-title">{{ $feature->title ?? '' }}</span>
                                     @if (!empty($feature->description))
-                                        <div class="text-muted" style="font-size: 13px; margin-top: 3px;">
+                                        <div class="text-muted gallery-feature-desc">
                                             {{ $feature->description }}
                                         </div>
                                     @endif

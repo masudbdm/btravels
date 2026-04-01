@@ -49,4 +49,9 @@ Route::get('/storage', function () {
     return redirect()->back();
 });
 
+// SEO endpoints
+Route::get('/sitemap.xml', [App\Http\Controllers\SeoController::class, 'sitemap'])->name('sitemap.xml');
+Route::get('/robots.txt', [App\Http\Controllers\SeoController::class, 'robots'])->name('robots.txt');
+Route::get('/llms.txt', [App\Http\Controllers\SeoController::class, 'llms'])->name('llms.txt');
+
 

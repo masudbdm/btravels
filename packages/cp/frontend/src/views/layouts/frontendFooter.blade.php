@@ -135,6 +135,21 @@
                             <li style="display: inline; margin-right:5px;"><a href="{{ $ws->linked_url }}" target="_blank" style="color: rgb(207, 205, 205);"><i class="fab fa-linkedin fs-5 w3-text-white"></i></a></li>
                             @endif
                         </ul>
+
+                        <h5 class="text-6 text-transform-none font-weight-semibold text-color-light mb-2">
+                            SEO</h5>
+                        <ul class="list list-unstyled">
+                            <li class="mb-1 text-4">
+                                <a style="color:rgb(207, 205, 205)" href="{{ url('/sitemap.xml') }}">Sitemap</a>
+                            </li>
+                            <li class="mb-1 text-4">
+                                <a style="color:rgb(207, 205, 205)" href="{{ url('/robots.txt') }}">Robots</a>
+                            </li>
+                            <li class="mb-1 text-4">
+                                <a style="color:rgb(207, 205, 205)" href="{{ url('/llms.txt') }}">AI Discovery</a>
+                            </li>
+                        </ul>
+                        
                     </div>
 
                     @if ($footerMenus->count())
@@ -154,6 +169,7 @@
                             </div>
                         @endforeach
                     @endif
+ 
                 </div>
             </div>
         </div>

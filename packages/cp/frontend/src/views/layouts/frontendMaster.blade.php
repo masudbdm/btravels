@@ -5,6 +5,28 @@
 		<!-- Basic -->
     <title>@yield('title')</title>
 
+		{{-- Default SEO (can be overridden per page) --}}
+		<meta name="description" content="@yield('meta_description', ($ws->meta_description ?? $ws->website_title ?? ''))">
+		<link rel="canonical" href="@yield('canonical', url()->current())">
+		<meta name="robots" content="@yield('meta_robots', 'index,follow')">
+
+		{{-- Open Graph --}}
+		<meta property="og:site_name" content="{{ $ws->website_title ?? config('app.name') }}">
+		<meta property="og:title" content="@yield('og_title', trim($__env->yieldContent('title')))">
+		<meta property="og:description" content="@yield('og_description', trim($__env->yieldContent('meta_description', ($ws->meta_description ?? $ws->website_title ?? ''))))">
+		<meta property="og:type" content="@yield('og_type', 'website')">
+		<meta property="og:url" content="@yield('og_url', url()->current())">
+		<meta property="og:image" content="@yield('og_image', route('imagecache', ['template' => 'original', 'filename' => $ws->logo()]))">
+
+		{{-- Twitter --}}
+		<meta name="twitter:card" content="@yield('twitter_card', 'summary_large_image')">
+		<meta name="twitter:title" content="@yield('twitter_title', trim($__env->yieldContent('title')))">
+		<meta name="twitter:description" content="@yield('twitter_description', trim($__env->yieldContent('meta_description', ($ws->meta_description ?? $ws->website_title ?? ''))))">
+		<meta name="twitter:image" content="@yield('twitter_image', route('imagecache', ['template' => 'original', 'filename' => $ws->logo()]))">
+
+		@stack('seo')
+		@yield('schema')
+
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Mobile Metas -->
