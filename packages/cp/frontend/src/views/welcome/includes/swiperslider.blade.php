@@ -6,7 +6,7 @@
     <div class="text-center">
         <h1 class="w3-xlarge pb-0">
             <b>
-                <a href="{{ route('gallery') }}" style="color: inherit; text-decoration: none;">Gallery</a>
+                <a href="{{ route('gallery') }}" style="color: inherit;">Go to Gallery</a>
             </b>
         </h1>
         <p class="">Expand your travel horizons with new facets! Explore the world by choosing your ideal <br> travel destinations in Asia, Europe, America, Australia and more with bayyinah travels.</p>
