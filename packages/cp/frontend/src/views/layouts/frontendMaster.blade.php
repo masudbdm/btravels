@@ -27,6 +27,19 @@
 		@stack('seo')
 		@yield('schema')
 
+        @if($ws->google_analytics_code)
+        {!! $ws->google_analytics_code !!}
+        @endif
+
+        @if($ws->google_search_console)
+        {!! $ws->google_search_console !!}
+        @endif
+        
+        @if($ws->facebook_pixel_code)
+        {!! $ws->facebook_pixel_code !!}
+        @endif
+
+
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Mobile Metas -->
